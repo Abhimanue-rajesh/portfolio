@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhimanue R — Technical Business Analyst with 4+ years of experience in business analysis, requirements gathering, process optimization, and software implementation.">
+  <meta name="author" content="Abhimanue R">
+  <meta name="keywords" content="Technical Business Analyst, Business Analysis, Software Developer, Django, Python, Agile, Kerala">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abhimanue R | Technical Business Analyst">
+  <meta property="og:description" content="Technical Business Analyst with 4+ years of experience in business analysis, requirements gathering, process optimization, and software implementation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abhimanuerajesh.online">
+  <meta property="og:locale" content="en_US">
+
+  <title>Abhimanue R | Technical Business Analyst</title>
+
+  <!-- Favicon placeholder — replace with your own favicon.ico or favicon.svg -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230a0a0a' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='62' font-family='Arial,sans-serif' font-size='42' font-weight='bold' fill='%2306b6d4' text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            dark: {
+              DEFAULT: '#0a0a0a',
+              lighter: '#111111',
+              card: '#141414',
+              border: '#1f1f1f',
+            },
+            accent: {
+              DEFAULT: '#06b6d4',
+              light: '#22d3ee',
+              dark: '#0891b2',
+              glow: 'rgba(6, 182, 212, 0.35)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body class="font-poppins bg-dark text-gray-200 antialiased overflow-x-hidden">
+
+  <!-- Geometric Background -->
+  <div class="geo-bg" aria-hidden="true">
+    <div class="geo-grid"></div>
+    <div class="geo-shapes">
+      <div class="geo-shape geo-hex"></div>
+      <div class="geo-shape geo-triangle"></div>
+      <div class="geo-shape geo-circle"></div>
+      <div class="geo-shape geo-hex geo-hex-2"></div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#home" class="nav-logo text-xl md:text-2xl font-bold text-white tracking-tight">
+          Abhimanue <span class="text-accent">R</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button id="menu-toggle" class="lg:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg border border-dark-border hover:border-accent/50 transition-colors" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu lg:hidden">
+      <ul class="flex flex-col px-4 py-4 gap-1">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero-section min-h-screen flex items-center pt-20 pb-16 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <!-- Text -->
+          <div class="order-2 lg:order-1 text-center lg:text-left" data-aos="fade-right" data-aos-duration="800">
+            <p class="text-accent font-medium text-sm sm:text-base tracking-widest uppercase mb-3">Hello, I'm</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+              Abhimanue <span class="text-accent glow-text">R</span>
+            </h1>
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
+              Technical Business Analyst
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
+              Technical Business Analyst with 4+ years of experience in business analysis, requirements gathering, process optimization, and software implementation.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <a href="#projects" class="btn-primary">
+                <i class="fas fa-folder-open mr-2"></i>View Projects
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <i class="fas fa-envelope mr-2"></i>Contact Me
+              </a>
+              <a href="#" class="btn-outline" download>
+                <i class="fas fa-download mr-2"></i>Download Resume
+              </a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4 justify-center lg:justify-start">
+              <a href="https://github.com/Abhimanue-rajesh" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/abhimanue-rajesh" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:abhimanuemvk@gmail.com" class="social-icon" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://abhimanuerajesh.online" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Website">
+                <i class="fas fa-globe"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Image -->
+          <div class="order-1 lg:order-2 flex justify-center" data-aos="fade-left" data-aos-duration="800">
+            <div class="profile-frame">
+              <div class="profile-glow"></div>
+              <!-- Replace this image src with your own photo -->
+              <img
+                src="https://via.placeholder.com/400x400/141414/06b6d4?text=AR"
+                alt="Abhimanue R — Profile Photo"
+                class="profile-image"
+                width="400"
+                height="400"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section-padding">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div class="lg:col-span-2" data-aos="fade-up" data-aos-delay="100">
+            <p class="text-gray-400 text-base sm:text-lg leading-relaxed">
+              Competent in converting business requirements into functional specifications, user stories, workflows, BRDs, FRDs, and acceptance criteria. Proficient in Agile/Scrum environments, with practical experience in Django, Python, SQL, and REST APIs for validation and prototyping. Demonstrated track record of system analysis, gap analysis, and quantifiable improvements including workflow automation, system integrations, and marketing outreach with automated email marketing that boosted brand visibility and drove a 15% increase in engagement.
+            </p>
+          </div>
+
+          <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt text-accent"></i>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">Kayamkulam, Kerala, India</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-phone text-accent"></i>
+              <div>
+                <p class="info-label">Phone</p>
+                <a href="tel:+916282213489" class="info-value hover:text-accent transition-colors">+91 6282213489</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-envelope text-accent"></i>
+              <div>
+                <p class="info-label">Email</p>
+                <a href="mailto:abhimanuemvk@gmail.com" class="info-value hover:text-accent transition-colors">abhimanuemvk@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-language text-accent"></i>
+              <div>
+                <p class="info-label">Languages</p>
+                <ul class="info-value text-sm space-y-1 mt-1">
+                  <li>Malayalam — Native</li>
+                  <li>English — Full Professional</li>
+                  <li>Hindi — Limited Working</li>
+                  <li>Tamil — Elementary</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="section-padding bg-dark-lighter/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Business Analysis -->
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-card-header">
+              <i class="fas fa-chart-line"></i>
+              <h3>Business Analysis</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Requirement Gathering (BRD, FRD, SRS)</span>
+              <span class="skill-badge">User Stories</span>
+              <span class="skill-badge">Use Cases</span>
+              <span class="skill-badge">Process Mapping (Draw.io, Lucidchart)</span>
+              <span class="skill-badge">SDLC/STLC</span>
+              <span class="skill-badge">Agile/Scrum</span>
+              <span class="skill-badge">UAT</span>
+              <span class="skill-badge">Acceptance Criteria</span>
+              <span class="skill-badge">Backlog &amp; Sprint Management (ClickUp, Trello)</span>
+              <span class="skill-badge">Vendor Coordination</span>
+            </div>
+          </div>
+
+          <!-- Documentation -->
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card-header">
+              <i class="fas fa-file-alt"></i>
+              <h3>Documentation &amp; Support</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Confluence</span>
+              <span class="skill-badge">Golden Ratio Ticketing System</span>
+            </div>
+          </div>
+
+          <!-- ERP -->
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card-header">
+              <i class="fas fa-building"></i>
+              <h3>ERP, HRMS &amp; E-commerce</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Entersoft</span>
+              <span class="skill-badge">Olive</span>
+              <span class="skill-badge">Shopify</span>
+            </div>
+          </div>
+
+          <!-- Marketing -->
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-card-header">
+              <i class="fas fa-bullhorn"></i>
+              <h3>Marketing &amp; Automation</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Mailchimp</span>
+              <span class="skill-badge">Leadpages</span>
+              <span class="skill-badge">WATI</span>
+              <span class="skill-badge">Spur</span>
+              <span class="skill-badge">Zapier</span>
+            </div>
+          </div>
+
+          <!-- Technical -->
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card-header">
+              <i class="fas fa-code"></i>
+              <h3>Technical</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Django</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">SQL (MySQL/SQLite)</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Git/GitHub</span>
+              <span class="skill-badge">Linux</span>
+            </div>
+          </div>
+
+          <!-- Data -->
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card-header">
+              <i class="fas fa-database"></i>
+              <h3>Data &amp; Reporting</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Excel</span>
+              <span class="skill-badge">Pivot Tables</span>
+              <span class="skill-badge">Data Validation</span>
+              <span class="skill-badge">Pandas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="section-padding">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Career</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline max-w-4xl mx-auto">
+          <!-- Job 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Oct 2024 — Present</span>
+              <h3 class="timeline-title">Software Analyst &amp; Digital Systems Specialist</h3>
+              <p class="timeline-company">The Deep Seafood Company LLC</p>
+              <ul class="timeline-list">
+                <li>Analyzed ERP (Entersoft) and HRMS (Olive) systems, identifying workflow gaps and recommending improvements across HR, Accounts, and Operations</li>
+                <li>Coordinated attendance system-to-HRMS and HRMS-to-EBS integration requirements; liaised with vendor/external team, validated final integration</li>
+                <li>Analyzed IT support issues; resolved recurring issues via Golden Ratio ticketing system, escalated complex issues to development team</li>
+                <li>Reported recurring issue patterns to management for root-cause fixes</li>
+                <li>Designed automation workflows using Zapier, WATI, and Spur to improve customer engagement and operational efficiency</li>
+                <li>Managed Shopify e-commerce operations and maintained 4+ corporate/e-commerce websites</li>
+                <li>Designed and executed email marketing campaigns (Mailchimp, Leadpages) for Gulfood 2025 &amp; 2026, driving a 15% increase in engagement</li>
+                <li>Independently built and deployed an internal Task &amp; Ticket Management System, adopted company-wide</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Mar 2023 — Sep 2024</span>
+              <h3 class="timeline-title">Software Developer</h3>
+              <p class="timeline-company">Hyovis Technologies And Water Systems</p>
+              <ul class="timeline-list">
+                <li>Led deployment of Django-based web applications (backend logic to server setup)</li>
+                <li>Built core modules for CRM and project tracking with integrated employee performance scoring</li>
+                <li>Managed a cross-functional team of 8 (developers, testers, trainees)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Aug 2022 — Jan 2023</span>
+              <h3 class="timeline-title">Junior Software Developer</h3>
+              <p class="timeline-company">The Groverzmart</p>
+              <ul class="timeline-list">
+                <li>Developed a Python/Tkinter desktop application to monitor real-time hydroponic environmental data</li>
+                <li>Implemented a TensorFlow-based ML model for automated spinach leaf disease classification</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 4 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Apr 2022 — Jul 2022</span>
+              <h3 class="timeline-title">Assistant Systems Engineer</h3>
+              <p class="timeline-company">Zastrin Naval Systems Pvt Ltd.</p>
+              <ul class="timeline-list">
+                <li>Contributed to design of Analogue Front End schematics and PCB layouts for underwater warfare systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section-padding bg-dark-lighter/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Project 1 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-card-icon">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <span class="project-year">2026</span>
+            <h3 class="project-title">DocuClinic — Clinic Management System</h3>
+            <p class="project-desc">Role-based clinic management system for patients, appointments, medical records, prescriptions, and inventory.</p>
+            <ul class="project-features">
+              <li>Appointment scheduling, patient profiles, prescription management</li>
+              <li>Medicine stock tracking and expiry monitoring</li>
+              <li>Role-based workflows for admins, physicians, nurses, receptionists, and patients</li>
+              <li>Configurable clinic settings for profile, licensing, GST, consultation duration</li>
+            </ul>
+            <div class="project-stack">
+              <span>Django</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>REST APIs</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card-icon">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <span class="project-year">Feb 2026</span>
+            <h3 class="project-title">Internal Task &amp; Ticket Management System</h3>
+            <p class="project-desc">Centralized solution for internal support workflows at The Deep Seafood.</p>
+            <ul class="project-features">
+              <li>Modules for ticket creation, task assignment, priority handling, status tracking</li>
+              <li>Role-based access control</li>
+              <li>Dashboards and reporting tools to monitor task progress and operational performance</li>
+            </ul>
+            <div class="project-stack">
+              <span>Business Analysis</span>
+              <span>Requirements Gathering</span>
+              <span>Dashboard</span>
+              <span>RBAC</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <span class="project-year">Mar 2024 — May 2024</span>
+            <h3 class="project-title">Office Management Application</h3>
+            <p class="project-desc">Role-based office management system for task tracking, project management, and employee performance evaluation.</p>
+            <ul class="project-features">
+              <li>Translated operational requirements into functional modules for task allocation and progress monitoring</li>
+              <li>Implemented secure authentication, access control, and workflow improvements</li>
+            </ul>
+            <div class="project-stack">
+              <span>Django</span>
+              <span>SQL</span>
+              <span>JavaScript</span>
+              <span>Authentication</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education" class="section-padding">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="edu-card">
+            <div class="edu-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="edu-date">Jun 2019 — Mar 2022</span>
+              <h3 class="edu-degree">Bachelor of Science (B.Sc) in Electronics</h3>
+              <p class="edu-institution">University of Kerala — College of Applied Science Mavelikara</p>
+              <ul class="edu-details">
+                <li>Participated in NSS and earned certification during bachelor's degree</li>
+                <li>Completed an internship at Keltron Systems, gaining practical experience in testing and machinery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activities & Certifications -->
+        <div class="mt-16" data-aos="fade-up">
+          <div class="section-header mb-8">
+            <span class="section-tag">Achievements</span>
+            <h2 class="section-title text-2xl sm:text-3xl">Activities &amp; Certifications</h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            <div class="cert-badge">
+              <i class="fas fa-certificate"></i>
+              <p>British Council's Aptis test, conducted under the auspices of the Government of Kerala</p>
+            </div>
+            <div class="cert-badge">
+              <i class="fas fa-award"></i>
+              <p>Mercer-Mettl's assessment battery, part of employability study for Additional Skill Acquisition program</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section-padding bg-dark-lighter/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+          <!-- Contact Form -->
+          <!--
+            NOTE: This form requires a backend/form service (e.g., Formspree, Netlify Forms, or EmailJS)
+            to actually send emails, since this is a static site hosted on GitHub Pages.
+            Replace the action URL below with your Formspree endpoint, e.g.:
+            action="https://formspree.io/f/YOUR_FORM_ID"
+          -->
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="#"
+            method="POST"
+            data-aos="fade-up"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full sm:w-auto">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+          </form>
+
+          <!-- Contact Details -->
+          <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <p class="contact-detail-label">Email</p>
+                <a href="mailto:abhimanuemvk@gmail.com">abhimanuemvk@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-phone"></i>
+              <div>
+                <p class="contact-detail-label">Phone</p>
+                <a href="tel:+916282213489">+91 6282213489</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <p class="contact-detail-label">Location</p>
+                <p>Kayamkulam, Kerala, India</p>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <p class="text-gray-400 mb-4">Connect with me</p>
+              <div class="flex gap-4">
+                <a href="https://github.com/Abhimanue-rajesh" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/abhimanue-rajesh" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://abhimanuerajesh.online" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Website">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+        <p class="text-gray-500 text-sm text-center sm:text-left">
+          &copy; <span id="footer-year"></span> Abhimanue R. All rights reserved.
+        </p>
+
+        <div class="flex gap-4">
+          <a href="https://github.com/Abhimanue-rajesh" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/abhimanue-rajesh" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:abhimanuemvk@gmail.com" class="footer-social" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://abhimanuerajesh.online" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Website">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
